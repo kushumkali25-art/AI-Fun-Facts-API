@@ -1,0 +1,57 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+h1 { font-size: 24px; margin-bottom: 6px; color: #203a43; }
+.subtitle { color: #888; font-size: 14px; margin-bottom: 22px; }
+
+#fact-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2c5364, #0f2027);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#fact-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 32, 39, 0.35);
+}
+#fact-btn:disabled { background: #a9bcc4; cursor: not-allowed; }
+
+#status { margin-top: 14px; font-size: 14px; color: #2c5364; min-height: 18px; font-weight: 500; }
+
+.fact-box {
+  margin-top: 16px;
+  padding: 18px;
+  background: #f4f8f9;
+  border-left: 4px solid #2c5364;
+  border-radius: 10px;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+}
+
+.hidden { display: none; }
